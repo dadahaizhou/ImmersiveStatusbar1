@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context="com.example.administrator.titlebar.Main2Activity">
+     <ImageView
+         android:id="@+id/imgbtn"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:scaleType="fitXY"
+         android:src="@mipmap/bg_test1"/>
+</RelativeLayout>
