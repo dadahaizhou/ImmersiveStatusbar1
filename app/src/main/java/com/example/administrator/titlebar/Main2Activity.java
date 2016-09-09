@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.zhou.titleapplication.R;
+import com.zhou.application.R;
 
 public class Main2Activity extends BaseActivity {
 

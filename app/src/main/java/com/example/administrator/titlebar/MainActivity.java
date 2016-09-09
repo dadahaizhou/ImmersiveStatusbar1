@@ -10,9 +10,11 @@ import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
+import android.widget.Button;
 
-import com.zhou.titleapplication.R;
+
+import com.zhou.animation.AnimationActivity;
+import com.zhou.application.R;
 
 public class MainActivity extends BaseActivity {
 
@@ -45,11 +47,19 @@ public class MainActivity extends BaseActivity {
             });
         }
 
-        TextView tv= (TextView) findViewById(R.id.textview);
-        tv.setOnClickListener(new View.OnClickListener() {
+        Button btn= (Button) findViewById(R.id.btn1);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switchFullWindow();
+            }
+        });
+
+        Button btn_animation= (Button) findViewById(R.id.btn_animation);
+        btn_animation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+              startActivity(new Intent(MainActivity.this, AnimationActivity.class));
             }
         });
     }
